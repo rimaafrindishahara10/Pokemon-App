@@ -1,0 +1,78 @@
+@import  "../../../styles.scss";
+
+h2{
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.grid-wrapper{
+
+    display: grid;
+    row-gap: 14px;
+    column-gap: 14px;
+    margin: 15px 0 15px 0;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+
+    @media screen and (min-width: 992px) {
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: auto;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+    @media screen and (min-width: 1500px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+
+
+
+    .card{
+        background-color: $off-white;
+        text-align: center;
+        padding: 16px 10px;
+    
+        .card-wrapper{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 6px;
+    
+            .image{
+                img{
+                    display: block;
+                    width: 100%;
+                    max-width: 150px;
+                    height: 150px;
+                }
+            }
+            .info{
+                h3{
+                    margin: 14px 0;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                }
+            }
+    
+            p{
+                background-color: $gray;
+                font-size: 10px;
+                letter-spacing: 2px;
+                border-radius: 20px;
+                padding: 4px 12px;
+                margin-bottom: 8px;
+                width: fit-content;
+            }
+    
+        }
+    }
+}
