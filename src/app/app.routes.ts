@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { PokemonListComponent } from './component/pokemon-list/pokemon-list.component';
+import { DetailsPageComponent } from './component/details-page/details-page.component';
 
 export const routes: Routes = [
 
@@ -11,6 +12,10 @@ export const routes: Routes = [
     {
     path: 'pokemon-list',
     component:PokemonListComponent,
+   },
+   {
+    path: 'details-page',
+    component:DetailsPageComponent,
    },
 
    {
