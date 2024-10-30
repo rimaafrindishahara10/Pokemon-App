@@ -4,15 +4,17 @@
     <div class="grid-wrapper">
 
     
-        <div class="card">
+        <div class="card shadow" *ngFor="let pokemon of pokemonDetails">
             <div class="card-wrapper">
                 <div class="image">
-                    <img src="../../../assets/pikachu.png" alt="Pokemon">
+                    <img [src]="pokemon.sprites.other.dream_world.front_default">
                 </div>
                 <div class="info">
-                    <h3>bulbasaur</h3>
-                    <p>grass</p>
-                    <p>poison</p>
+                    <h3>{{pokemon.name}}</h3>
+                    <div *ngFor="let types of pokemon.types" >
+                        <p>{{types.type.name}}</p>
+                        
+                    </div>
         
                 </div>
                
@@ -20,69 +22,13 @@
             <button class="button">See Details</button>
         </div>
         
-        <div class="card">
-            <div class="card-wrapper">
-                <div class="image">
-                    <img src="../../../assets/pikachu.png" alt="Pokemon">
-                </div>
-                <div class="info">
-                    <h3>bulbasaur</h3>
-                    <p>grass</p>
-                    <p>poison</p>
         
-                </div>
-               
-            </div>
-            <button class="button">See Details</button>
-        </div>
         
-        <div class="card">
-            <div class="card-wrapper">
-                <div class="image">
-                    <img src="../../../assets/pikachu.png" alt="Pokemon">
-                </div>
-                <div class="info">
-                    <h3>bulbasaur</h3>
-                    <p>grass</p>
-                    <p>poison</p>
+      
         
-                </div>
-               
-            </div>
-            <button class="button">See Details</button>
-        </div>
         
-        <div class="card">
-            <div class="card-wrapper">
-                <div class="image">
-                    <img src="../../../assets/pikachu.png" alt="Pokemon">
-                </div>
-                <div class="info">
-                    <h3>bulbasaur</h3>
-                    <p>grass</p>
-                    <p>poison</p>
         
-                </div>
-               
-            </div>
-            <button class="button">See Details</button>
-        </div>
-        
-        <div class="card">
-            <div class="card-wrapper">
-                <div class="image">
-                    <img src="../../../assets/pikachu.png" alt="Pokemon">
-                </div>
-                <div class="info">
-                    <h3>bulbasaur</h3>
-                    <p>grass</p>
-                    <p>poison</p>
-        
-                </div>
-               
-            </div>
-            <button class="button">See Details</button>
-        </div>
+       
         
         </div>
 
